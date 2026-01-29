@@ -79,8 +79,8 @@
         </section>
         <!-- About Section -->
         <section class="about bg-[#1A0B2E] text-white py-20">
-            <div class="about-container max-w-[1200px] m-auto text-center space-y-5 ">
-                <div class="about-info 2xl:w-[70%] xl:w-[70%]  md:w-[80%] sm:w-[90%] text-center justify-center m-auto space-y-5">
+            <div class="about-container max-w-[1200px] m-auto text-center space-y-5 p-3 lg:p-0 ">
+                <div class="about-info  lg:w-[70%]  md:w-[80%] text-center justify-center m-auto space-y-5">
                     <h2 class="text-5xl font-bold">About the Podcast</h2>
                     <p class="text-base font-normal">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
                     We break down complex topics into digestible insights, explore productivity strategies that actually work,
@@ -160,7 +160,7 @@
          <section class="featured bg-[#1A0B2E]">
             <div class="featured-container max-w-[1200px] m-auto text-center py-20 space-y-10">
                 <!-- Section Heading -->
-                <h2 class="text-5xl text-white">Featured Episodes</h2>
+                <h2 class="text-white text-5xl font-bold">Featured Episodes</h2>
                 
                 <div class="cards grid grid-cols-1 gap-3  lg:grid-cols-3 lg:gap-10 justify-between  p-10 ">
                     <!-- Card 1 -->
@@ -206,11 +206,59 @@
             </div>
          </section>
          <!--Host Section  -->
+         <section class="host bg-[#1A0B2E] pb-30">
+            <div class="host-container max-w-[1200px] m-auto text-center space-y-10 ">
+                <h2 class="text-white text-5xl font-bold mb-20 ">Meet the Host</h2>
+                <div class="host-card flex gap-5 bg-[#250E44] rounded-4xl p-10">
+                    <div class="profile-pic aspect-square h-50">
+                        <img class=" " src="images/host.png" alt="">
+                    </div>
+                    <div class="card-info space-y-4">
+                        <h3 class="text-white text-3xl font-bold text-left">Alex Kumar</h3>
+                        <p class="text-white text-left">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                        <div class="social-icons flex gap-2">
+                            <a class=" border-2 rounded-full p-4 border-[#533C72] justify-center align-center " href="#"><img class="w-5 h-5" src="images/linkedin.png" alt=""></a>
+                            <a class=" border-2 rounded-full p-4 border-[#533C72] justify-center align-center " href="#"><img class="w-5 h-5" src="images/x.png" alt=""></a>
+                            <a class=" border-2 rounded-full p-4 border-[#533C72] justify-center align-center " href="#"><img class="w-5 h-5" src="images/instagram.png" alt=""></a>
+                            <a class=" border-2 rounded-full p-4 border-[#533C72] justify-center align-center " href="#"><img class="w-5 h-5" src="images/youtube.png" alt=""></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         
          
                 
     </main>
-    <footer>
-
+    <!-- Footer Section -->
+    <footer class="bg-[url('images/footer-bg.png')] p-30 bg-center bg-cover  bg-no-repeat">
+        <div class="footer-container max-w-[1200px] m-auto text-center flex flex-col gap-7 ">
+            <h2>
+                <span class="text-white font-bold text-7xl">Tech</span>
+                <span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent text-7xl font-bold">Wave</span>
+            </h2>
+            <div class="socia-link-footer text-white font-normal text-base m-auto justify-center grid grid-cols-2 gap-5 lg:grid-cols-4">
+                <a class="flex gap-4" href="#">
+                    <img class="w-5 h-5" src="images/spotify.png" alt="">
+                    <p>Spotify</p>
+                </a>
+                <a class="flex gap-4 justify-center align-center" href="#">
+                    <img class="w-5 h-5" src="images/apple-podcast.png" alt="">
+                    <p class="text-nowrap">Apple Podcasts</p>
+                </a>
+                <a class="flex gap-4" href="#">
+                    <img class="w-5 h-5" src="images/youtube-podcast.png" alt="">
+                    <p>Youtube</p>
+                </a>
+                <a class="flex gap-4" href="#">
+                    <img class="w-5 h-5" src="images/twitter.png" alt="">
+                    <p>Twitter</p>
+                </a>
+            </div>
+            <small class=" text-white font-normal text-base">© 2026 TechWave Podcast. All rights reserved.</small>
+        </div>
     </footer>
 </body>
 </html>
