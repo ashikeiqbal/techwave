@@ -3,11 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechWave</title>
     <!-- Tailwind Link Code Here -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- Font Awesome Link Code Here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Css Styles Here -->
+     <style>
+        .inter {
+            font-family: 'Inter', sans-serif;
+        }
+     </style>
 </head>
-<body>
-    
+<body class="font-[Inter] inter">
+    <header class="bg-[#1A0B2E] ">
+        <nav class="lg:w-[1200px]  flex mx-auto justify-between items-center p-6 ">
+            <div class="logo">
+                <h2>
+                    <span class="text-white font-bold text-3xl">Tech</span>
+                    <span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent text-3xl font-bold">Wave</span>
+                </h2>
+            </div>
+            <div class="manu lg:block hidden">
+                <ul class="text-white flex flex-row gap-8 ">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+            </div>
+            <div class="subscribe-button ">
+                <button class=" lg:block hdden bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white px-4 py-2 rounded-full font-semibold">
+                    <span>Subscribe </span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="three-line-bar lg:hidden block">
+                <i class="fa-solid fa-bars text-white "></i>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero bg-[url('images/hero-bg.png')] bg-center bg-cover  bg-no-repeat">
+            <div class="hero-container text-center w-full max-w-[1200px]  mx-auto p-25 align-center justify-center ">
+                <div class="hero-image flex justify-center">
+                    <!-- Hero Image -->
+                    <div class="mx-auto my-auto bg-[url('images/hero-circle.png')] bg-no-repeat p-30">
+                        <img class=" " src="images/microphone.png" alt="">
+                    </div>
+                </div>
+                <div class="hero-content text-white">
+                    <h1 class="text-6xl font-extrabold mb-6">TechWave</h1>
+                    <p class="text-4 mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="flex gap-2 text-center justify-center mt-6">
+                        <!-- Button-1 -->
+                        <button class="whitespace-nowrap bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full font-semibold flex gap-2 px-7 py-3">
+                            <img src="images/spotify.png" alt="">
+                            <span class="">Listen on Spotify</span>
+                        </button>
+                        <!-- Button-2 -->
+                        <button class="flex gap-2 px-7 py-3 justify-center items-center border-1 border-[#00FF88] rounded-full font-semibold ml-2">
+                            <img class=" w-5 h-4"src="images/message.png" alt="">
+                            <span class="text-[#00FF88]">Subscribe</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- About Section -->
+        <section class="about bg-[#1A0B2E] text-white py-20">
+            <div class="about-container max-w-[1200px] m-auto text-center space-y-5 ">
+                <div class="about-info 2xl:w-[70%] xl:w-[70%]  md:w-[80%] sm:w-[90%] text-center justify-center m-auto space-y-5">
+                    <h2 class="text-5xl font-bold">About the Podcast</h2>
+                    <p class="text-base font-normal">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                    and share stories of personal growth from industry leaders.<br></br>
+
+                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+                </div>
+                <hr class="my-20">
+                <div class=" text-center justify-center gap-20 mt-10 text-[#00FF88] 2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 gap-10">
+                    <div>
+                        <h2 class="text-5xl font-black ">150K+</h2>
+                        <p class="text-white font-normal text-base">Monthly Listeners</p>
+                    </div>
+                    <div>
+                        <h2 class="text-5xl font-black">200+</h2>
+                        <p class="text-white font-normal text-base">Episodes Published</p>
+                    </div>
+                    <div>
+                        <h2 class="text-5xl font-black">4.9★</h2>
+                        <p class="text-white font-normal text-base">Average Rating</p>
+                    </div>
+                    <div>
+                        <h2 class="text-5xl font-black">50+</h2>
+                        <p class="text-white font-normal text-base">Industry Experts</p>
+                    </div>
+                </div>
+
+            </div>
+        </section> 
+
+        <!-- Why Choose TechWave -->
+        <section class="why-choose-techwave py-20 bg-[#230E3D] ">
+            <div class="why-choose-container max-w-[1200px] m-auto text-center bg-blue-900 ">
+                <div class="why-choose-info">
+                    <h2 class="text-white text-5xl font-bold">Why Choose TechWave</h2>
+                </div> 
+                <div class="p-5 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-7">
+                    <!-- Card 1 -->
+                    <div class="bg-[#2A0F4D] p-6 m-5 rounded-3xl text-white md:w-100 space-y-5 text-left  ">
+                        <img src="images/headphone.png" alt="">
+                        <h3 class="text-[1.37rem] font-bold">Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="bg-[#2A0F4D] p-6 m-5 rounded-3xl text-white md:w-100 space-y-5 text-left  ">
+                        <img src="images/headphone.png" alt="">
+                        <h3 class="text-[1.37rem] font-bold">Mobile Friendly</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="bg-[#2A0F4D] p-6 m-5 rounded-3xl text-white md:w-100 space-y-5 text-left  ">
+                        <img src="images/headphone.png" alt="">
+                        <h3 class="text-[1.37rem] font-bold">Global Community</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="bg-[#2A0F4D] p-6 m-5 rounded-3xl text-white md:w-100 space-y-5 text-left  ">
+                        <img src="images/headphone.png" alt="">
+                        <h3 class="text-[1.37rem] font-bold">Exclusive Interviews</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="bg-[#2A0F4D] p-6 m-5 rounded-3xl text-white md:w-100 space-y-5 text-left  ">
+                        <img src="images/headphone.png" alt="">
+                        <h3 class="text-[1.37rem] font-bold">Rich Resources</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+
+                    </div>
+                    
+                </div> 
+        </section>
+                
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

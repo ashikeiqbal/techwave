@@ -1,0 +1,128 @@
+/* .hero-container{
+    max-width: 1200px;
+    background-color: aqua;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+
+
+/* ------------------------ */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Default font */
+}
+
+/* Hero Section Background */
+.hero-section {
+    background-image: url('images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Optional: Makes it full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.hero-container {
+    width: 100%;
+    max-width: 1200px; /* w-[1200px] */
+    margin: 0 auto;    /* mx-auto */
+    padding: 7.5rem;   /* p-30 (approx 120px) */
+    text-align: center;
+}
+
+/* Image Wrapper */
+.hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Circle Background behind Microphone */
+.hero-circle {
+    background-image: url('images/hero-circle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7.5rem;   /* p-30 (approx 120px) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Typography */
+.hero-content {
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.75rem; /* text-6xl */
+    font-weight: 800;   /* font-extrabold */
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* estimated for text-4 */
+    margin-bottom: 1.5rem;
+    color: #e5e7eb; /* Light gray text */
+}
+
+/* Buttons Container */
+.button-group {
+    display: flex;
+    gap: 0.5rem; /* gap-2 */
+    justify-content: center;
+    margin-top: 1.5rem; /* mt-6 */
+}
+
+/* Shared Button Styles */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+    padding: 0.75rem 1.25rem; /* px-5 py-3 */
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 600; /* font-semibold */
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Spotify Button (Gradient) */
+.btn-spotify {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    color: black; /* Default text color for this button */
+    white-space: nowrap;
+}
+
+/* Subscribe Button (Border) */
+.btn-subscribe {
+    background: transparent;
+    border: 2px solid #00FF88;
+    color: #00FF88;
+    margin-left: 1rem; /* ml-4 */
+}
+
+.icon-message {
+    width: 1.25rem; /* w-5 */
+    height: 1rem;   /* h-4 */
+}
+
+
+.card{    
+    padding: 40px 24px;
+    margin: 20px;
+    
+}
+.card h3{
+    font-size: 1.37rem;
+}
+
+.card p{
+    font-size: 1rem;
+}
